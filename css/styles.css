@@ -6,3 +6,20 @@ body {
   font-family: 'Lato', sans-serif;
   color: #696969;
 }
+
+.bg-primary { background-color: #00ad75 !important; }
+
+.redes-sociales li a i {
+  color: white;
+  font-size: 1.5rem;
+  padding: .6rem 1rem;
+  opacity: .8;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.redes-sociales li a i:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.5) rotate(360deg);
+  transform: scale(1.5) rotate(360deg);
+}
