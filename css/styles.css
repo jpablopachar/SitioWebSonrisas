@@ -9,6 +9,8 @@ body {
 
 .bg-primary { background-color: #00ad75 !important; }
 
+.text-primary { color: #00ad75 !important; }
+
 .redes-sociales li a i {
   color: white;
   font-size: 1.5rem;
