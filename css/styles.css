@@ -286,8 +286,38 @@ body {
   transform: scale(1.2);
 }
 
+#te-ayudamos {
+  position: relative;
+  -webkit-transform: skewY(6deg);
+  transform: skewY(6deg);
+}
+
+#te-ayudamos::before {
+  content: '';
+  position: absolute;
+  background: black;
+  opacity: .4;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#te-ayudamos .container {
+  -webkit-transform: skewY(-6deg);
+  transform: skewY(-6deg);
+}
+
 @media (min-width: 768px) {
-  
+  #te-ayudamos {
+    -webkit-transform: skewY(3deg);
+    transform: skewY(3deg);
+  }
+
+  #te-ayudamos .container {
+    -webkit-transform: skewY(-3deg);
+    transform: skewY(-3deg);
+  }
 }
 
 @media (min-width: 990px) {
