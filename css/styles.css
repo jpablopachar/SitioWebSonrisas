@@ -308,6 +308,26 @@ body {
   transform: skewY(-6deg);
 }
 
+.contador-linea {
+  background-color: #00ad75;
+  width: 4rem;
+  height: .4rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+#premios .col-6:hover .contador-linea {
+  bottom: 1rem;
+  -webkit-transform: translateX(-50%) rotate(180deg);
+  transform: translateX(-50%) rotate(180deg);
+  background-color: #35363c;
+}
+
 @media (min-width: 768px) {
   #te-ayudamos {
     -webkit-transform: skewY(3deg);
