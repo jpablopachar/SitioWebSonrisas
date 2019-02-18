@@ -57,9 +57,7 @@ body {
   transition: left .2s ease;
 }
 
-.btn-primary:hover:after, .btn-primary:focus:after, .btn-primary:hover:after {
-  left: .3rem;
-}
+.btn-primary:hover:after, .btn-primary:focus:after, .btn-primary:hover:after { left: .3rem; }
 
 .btn-primary:before {
   content: "";
@@ -100,7 +98,7 @@ body {
   transform: scale(1.5) rotate(360deg);
 }
 
-/* #menu-navegacion .navbar-toggler {
+#menu-navegacion .navbar-toggler {
   padding: 0;
   font-size: 1rem;
   line-height: 1;
@@ -158,15 +156,15 @@ body {
 }
 
 .navbar-dark .navbar-nav .nav-link:hover { background-color: #4d4e57; }
+
 .navbar-dark .navbar-nav .nav-link:hover:after {
-    -webkit-transform: rotateZ(180deg);
-    transform: rotateZ(180deg);
-}
-.navbar-dark .navbar-nav .nav-link.active {
-    background-color: #00ad75;
+  -webkit-transform: rotateZ(180deg);
+  transform: rotateZ(180deg);
 }
 
-@media (min-width: 768px) {
+.navbar-dark .navbar-nav .nav-link.active { background-color: #00ad75; } 
+
+/* @media (min-width: 768px) {
   .navbar-dark .navbar-nav .nav-link {
   padding: .7rem 1.2rem;
   border-radius: 1.5rem;
@@ -385,7 +383,56 @@ body {
   display: none;
 }
 
+.columna-inclinada::before {
+  content: '';
+  position: absolute;
+  background-color: #00ad75;
+  top: 0;
+  left: -100%;
+  right: -100%;
+  bottom: 0;
+}
+
+.enlaces-secundario {
+  border-bottom: 1px solid #5d666f;
+  -webkit-box-shadow: 0 1px #212529;
+  box-shadow: 0 1px #212529;
+}
+
+.enlaces-secundario a {
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+#autor-link {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+#autor-link:hover {
+  color: #FFFFFF;
+  background: #232323;
+  text-shadow: 0 0 5px #FFF,  0 0 10px #FFF,  0 0 15px #FFF,  0 0 20px #49ff18,  0 0 30px #49FF18,  0 0 40px #49FF18,  0 0 55px #49FF18,  0 0 75px #49ff18;
+  color: #FFFFFF;
+  background: #35363c;
+}
+
+.ie11 #bienvenidos .contenedor-video img { width: 100% }
+
+.ie11 .navbar-dark .navbar-nav .nav-link:after { display: block; }
+
 @media (min-width: 768px) {
+  .navbar-dark .navbar-nav .nav-link {
+    padding: .7rem 1.2rem;
+    border-radius: 1.5rem;
+  }
+
+  .navbar-dark .navbar-nav .nav-link:after { content: "" }
+
   #te-ayudamos {
     -webkit-transform: skewY(3deg);
     transform: skewY(3deg);
@@ -394,6 +441,13 @@ body {
   #te-ayudamos .container {
     -webkit-transform: skewY(-3deg);
     transform: skewY(-3deg);
+  }
+  
+  .columna-inclinada::before {
+    left: -300%;
+    right: 0;
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
   }
 }
 
