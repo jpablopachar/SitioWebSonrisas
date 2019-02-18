@@ -182,6 +182,121 @@
       </div>
     </div>
   </section>
+  <section id="nuestra-app" class="text-white bg-secondary text-center jarallax" data-jarallax data-speed="0.7">
+    <picture class="jarallax-img">
+      <source media="(min-width:1200px)" srcset="./images/fondo-descargar-app-xl.jpg">
+      <source media="(min-width:768px)" srcset="./images/fondo-descargar-app-md.jpg">
+      <img src="./images/fondo-descargar-app.jpg" alt="Fondo como podemos ayudarte" class="w-100">
+    </picture>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 offset-md-6 col-md-6 text-md-left py-5">
+          <h2 class="h2 font-weight-bold">DESCARGA NUESTRA APP Y ACCEDE A DESCUENTOS EXCLUSIVOS</h2>
+          <h6 class="text-white-50">SOMOS PARTE DE TI</h6>
+          <p>Hemos creado una aplicación exclusiva para nuestros clientes. Desde donde podrás acceder a sorteos y descuentos especiales.</p>
+          <a href="#" class="btn btn-primary mt-3">Conócenos más</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contacto">
+    <header class="bg-primary text-white text-center position-relative py-5">
+      <h2 class="display-5 font-weight-bold">CONTÁCTANOS</h2>
+      <h7 class="text-white-50">ESTAMOS LISTOS PARA ENTENDERTE</h7>
+      <div class="detalle-rectangulo"></div>
+    </header>
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <h2 class="font-weight-bold text-center mb-2">Detalles de contácto:</h2>
+          <ul class="list-unstyled">
+            <li class="d-flex border-bottom py-4">
+              <i class="fas fa-globe fa-3x fa-fw text-primary mr-4"></i>
+              <div>
+                <h5 class="font-weight-bold">Dirección</h5>
+                <p class="mb-0">Av.2 Calle 30, Heredia - C.R.</p>
+              </div>
+            </li>
+            <li class="d-flex border-bottom py-4">
+              <i class="fas fa-mobile-alt fa-3x fa-fw text-warning mr-4"></i>
+              <div>
+                <h5 class="font-weight-bold">Teléfonos</h5>
+                <p class="mb-0">+506 8888 9999</p>
+              </div>
+            </li>
+            <li class="d-flex border-bottom py-4">
+              <i class="fas fa-envelope fa-3x fa-fw text-danger mr-4"></i>
+              <div>
+                <h5 class="font-weight-bold">Email</h5>
+                <p class="mb-0">info@sonrisas.com</p>
+              </div>
+            </li>
+            <li class="d-flex border-bottom py-4">
+              <i class="fab fa-skype fa-3x fa-fw text-info mr-4"></i>
+              <div>
+                <h5 class="font-weight-bold">Skype</h5>
+                <p class="mb-0">SonrisasOnline</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-6">
+          <h2 class="font-weight-bold text-center pt-4 pt-lg-0 mb-5">Separa una cita:</h2>
+          <form action="#" id="mi-formulario">
+            <div class="form-group form-row">
+              <label for="nombre" class="col-form-label col-12 col-md-3">Nombre:</label>
+              <div class="col-12 col-md-9">
+                <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingrese su nombre" data-parsley-required="true" data-parsley-error-message="El nombre es requerido.">
+              </div>
+            </div>
+            <div class="form-group form-row">
+              <label for="email" class="col-form-label col-12 col-md-3">Email:</label>
+              <div class="col-12 col-md-9">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Ingrese su email" ata-parsley-required-message="El email es requerido." data-parsley-type-message="Debe ingresar un email válido.">
+              </div>
+            </div>
+            <div class="form-group form-row">
+              <label for="celular" class="col-form-label col-12 col-md-3">Celular:</label>
+              <div class="col-12 col-md-9">
+                <input type="number" class="form-control" name="celular" id="celular" placeholder="Ingrese su celular" data-parsley-required="false">
+              </div>
+            </div>
+            <div class="form-group form-row">
+              <label for="mensaje" class="col-form-label col-12 col-md-3">Mensaje:</label>
+              <div class="col-12 col-md-9">
+                <textarea class="form-control" name="mensaje" id="mensaje" rows="4" placeholder="Ingrese su mensaje" data-parsley-required="true" data-parsley-required-message="Indíquenos su consulta o mensaje."></textarea>
+              </div>
+            </div>
+            <div class="form-group form-row">
+              <label for="fecha" class="col-form-label col-12 col-md-3">Fecha:</label>
+              <div class="col-12 col-md-9">
+                <div class="input-group">
+                  <input type="date" name="fecha" id="fecha" class="form-control datepicker" data-parsley-required="true" data-parsley-required-message="La fecha es requerida." data-parsley-errors-container=".error-fecha-cita">
+                  <label class="input-group-append input-group-fecha" for="fecha"><span class="input-group-text"><i class="far fa-calendar-alt"></i></span></label>
+              </div>
+              <div class="error-fecha-cita"></div>
+              </div>
+            </div>
+            <div class="form-group form-row">
+              <label for="hora" class="col-form-label col-12 col-md-3">Hora:</label>
+              <div class="col-12 col-md-9">
+                <div class="input-group">
+                  <input type="text" name="hora" id="hora" class="form-control datepicker" data-parsley-required="true" data-parsley-required-message="La hora es requerida." data-parsley-errors-container=".error-hora-cita">
+                  <label class="input-group-append input-group-hora" for="hora"><span class="input-group-text"><i class="far fa-clock"></i></span></label>
+                </div>
+                <div class="error-fecha-cita"></div>
+              </div>
+            </div>
+            <div class="form-group form-row">
+              <div class="col-12 offset-md-3 col-md-9">
+                <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -190,6 +305,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.5/venobox.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.10.7/jarallax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.8.1/parsley.min.js"></script>
   -->
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/popper.min.js"></script>
@@ -200,5 +316,7 @@
   <script src="js/pickdate/picker.js"></script>
   <script src="js/pickdate/picker.date.js"></script>
   <script src="js/pickdate/picker.time.js"></script>
+  <script src="js/parsley.min.js"></script>
+  <script src="js/parsley.es.js"></script>
 </body>
 </html>

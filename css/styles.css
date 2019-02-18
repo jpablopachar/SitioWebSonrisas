@@ -328,6 +328,63 @@ body {
   background-color: #35363c;
 }
 
+#nuestra-app::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#contacto .detalle-rectangulo {
+  position: absolute;
+  background: #00ad75;
+  width: 2.5rem;
+  height: 2.5rem;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(50%) rotate(45deg);
+  transform: translateX(-50%) translateY(50%) rotate(45deg);
+}
+
+.input-group-fecha, .input-group-hora {
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.picker__box { border: 5px solid #00ad75; }
+
+.picker--focused .picker__day--selected, .picker__day--selected, .picker__day--selected:hover {
+  background: #00ad75;
+  color: #fff;
+}
+
+.picker--focused .picker__list-item--highlighted, .picker__list-item--highlighted:hover, .picker__list-item:hover {
+  background: #00ad75;
+}
+
+.picker__list-item--highlighted, .picker__list-item:hover {
+  border-color: #007a53;
+}
+
+.picker__list { padding: .5rem 0; }
+
+.picker--time .picker__button--clear {
+  color: #fff;
+  background: #ff520d;
+  border-radius: .5rem;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.picker__button--clear:before {
+  width: 0;
+  border-top: 0px solid #e20;
+  display: none;
+}
+
 @media (min-width: 768px) {
   #te-ayudamos {
     -webkit-transform: skewY(3deg);
